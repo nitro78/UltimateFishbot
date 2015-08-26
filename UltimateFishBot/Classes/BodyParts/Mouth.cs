@@ -31,8 +31,8 @@ namespace UltimateFishBot.Classes.BodyParts
             {
                 m_mainForm.lblStatus.Image = Resources.online;
             }
-            t2s.Say(text);
-
+            if(t2s != null)
+                t2s.Say(text);
         }
 
     }
